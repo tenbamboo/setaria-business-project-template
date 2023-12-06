@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@setaria/setaria-ts':
-    specifier: file:F:\git\setaria-ts
-    version: file:../../git/setaria-ts(typescript@5.3.2)
+    specifier: ^0.0.8
+    version: 0.0.8(typescript@5.3.2)
   '@vueuse/core':
     specifier: ^10.7.0
     version: 10.7.0(vue@3.3.9)
@@ -24,8 +24,8 @@ dependencies:
     specifier: ^2.1.7
     version: 2.1.7(typescript@5.3.2)(vue@3.3.9)
   setaria-business-framework:
-    specifier: file:F:\git\setaria-business-framework\dist\setaria-business-framework
-    version: file:../../git/setaria-business-framework/dist/setaria-business-framework(@setaria/setaria-ts@0.0.7)(axios@1.6.2)(element-plus@2.4.3)(pinia@2.1.7)(setaria-components@0.0.2)(vue-i18n@9.8.0)(vue-router@4.2.5)(vue@3.3.9)(vxe-table@4.5.13)(xe-utils@3.5.14)
+    specifier: ^0.0.1
+    version: 0.0.1(@setaria/setaria-ts@0.0.8)(axios@1.6.2)(element-plus@2.4.3)(pinia@2.1.7)(setaria-components@0.0.2)(vue-i18n@9.8.0)(vue-router@4.2.5)(vue@3.3.9)(vxe-table@4.5.13)(xe-utils@3.5.14)
   setaria-components:
     specifier: ^0.0.2
     version: 0.0.2(element-plus@2.4.3)(vue@3.3.9)(vxe-table@4.5.13)(xe-utils@3.5.14)
@@ -1708,6 +1708,23 @@ packages:
       estree-walker: 2.0.2
       picomatch: 2.3.1
     dev: true
+
+  /@setaria/setaria-ts@0.0.8(typescript@5.3.2):
+    resolution: {integrity: sha512-hjGZgJ/+WqXKE1px4aHY/Ge5gF2JjySP4Foh/dsnH2ku1SE98v8p1qcFeWKRXzRkx/x5Fat/OfL7T6bWq9EK5g==}
+    engines: {node: '>=18.0.0'}
+    dependencies:
+      axios: 1.6.2
+      lodash-es: 4.17.21
+      pinia: 2.1.7(typescript@5.3.2)(vue@3.3.9)
+      vue: 3.3.9(typescript@5.3.2)
+      vue-i18n: 9.8.0(vue@3.3.9)
+      vue-router: 4.2.5(vue@3.3.9)
+      vue-types: 5.1.1(vue@3.3.9)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - debug
+      - typescript
+    dev: false
 
   /@sxzz/popperjs-es@2.11.7:
     resolution: {integrity: sha512-Ccy0NlLkzr0Ex2FKvh2X+OyERHXJ88XJ1MXtsI9y9fGexlaXaVTPzBCRBwIxFkORuOb+uBqeu+RqnpgYTEZRUQ==}
@@ -3758,6 +3775,49 @@ packages:
       has-property-descriptors: 1.0.1
     dev: true
 
+  /setaria-business-framework@0.0.1(@setaria/setaria-ts@0.0.8)(axios@1.6.2)(element-plus@2.4.3)(pinia@2.1.7)(setaria-components@0.0.2)(vue-i18n@9.8.0)(vue-router@4.2.5)(vue@3.3.9)(vxe-table@4.5.13)(xe-utils@3.5.14):
+    resolution: {integrity: sha512-LekgTBUaf01YNGrTtghQ2ReR17n12AEbAN/DjXymHmfVvgwG01wa6Dy+3W5p+d1lubnfY8QUhwfgEEMyoKmRfQ==}
+    peerDependencies:
+      '@setaria/setaria-ts': ^0.0.8
+      axios: ^1.6.2
+      element-plus: 2.4.1
+      pinia: ^2.1.7
+      setaria-components: 0.0.2
+      vue: ^3.3.9
+      vue-i18n: 9.8.0
+      vue-router: ^4.2.5
+      vxe-table: ^4.5.13
+      xe-utils: ^3.5.13
+    dependencies:
+      '@ctrl/tinycolor': 3.6.1
+      '@element-plus/icons-vue': 2.3.1(vue@3.3.9)
+      '@floating-ui/dom': 1.5.3
+      '@popperjs/core': /@sxzz/popperjs-es@2.11.7
+      '@setaria/setaria-ts': 0.0.8(typescript@5.3.2)
+      '@types/lodash': 4.14.202
+      '@types/lodash-es': 4.17.12
+      '@vueuse/core': 9.13.0(vue@3.3.9)
+      async-validator: 4.2.5
+      axios: 1.6.2
+      dayjs: 1.11.10
+      element-plus: 2.4.3(vue@3.3.9)
+      escape-html: 1.0.3
+      lodash: 4.17.21
+      lodash-es: 4.17.21
+      lodash-unified: 1.0.3(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)
+      memoize-one: 6.0.0
+      normalize-wheel-es: 1.2.0
+      pinia: 2.1.7(typescript@5.3.2)(vue@3.3.9)
+      setaria-components: 0.0.2(element-plus@2.4.3)(vue@3.3.9)(vxe-table@4.5.13)(xe-utils@3.5.14)
+      vue: 3.3.9(typescript@5.3.2)
+      vue-i18n: 9.8.0(vue@3.3.9)
+      vue-router: 4.2.5(vue@3.3.9)
+      vxe-table: 4.5.13(vue@3.3.9)(xe-utils@3.5.14)
+      xe-utils: 3.5.14
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+    dev: false
+
   /setaria-components@0.0.2(element-plus@2.4.3)(vue@3.3.9)(vxe-table@4.5.13)(xe-utils@3.5.14):
     resolution: {integrity: sha512-HfwwKLKcXyfHY0eAMKnfWpuKFczisF1aZDkSZsN0SyNadSFnnncdoI9sb/a8lFWWJ7J2lqilyk7cL6t3YU3rgQ==}
     peerDependencies:
@@ -4349,67 +4409,3 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
-
-  file:../../git/setaria-business-framework/dist/setaria-business-framework(@setaria/setaria-ts@0.0.7)(axios@1.6.2)(element-plus@2.4.3)(pinia@2.1.7)(setaria-components@0.0.2)(vue-i18n@9.8.0)(vue-router@4.2.5)(vue@3.3.9)(vxe-table@4.5.13)(xe-utils@3.5.14):
-    resolution: {directory: ../../git/setaria-business-framework/dist/setaria-business-framework, type: directory}
-    id: file:../../git/setaria-business-framework/dist/setaria-business-framework
-    name: setaria-business-framework
-    peerDependencies:
-      '@setaria/setaria-ts': file:F:\git\setaria-ts
-      axios: ^1.6.2
-      element-plus: 2.4.1
-      pinia: ^2.1.7
-      setaria-components: 0.0.2
-      vue: ^3.3.9
-      vue-i18n: 9.8.0
-      vue-router: ^4.2.5
-      vxe-table: ^4.5.13
-      xe-utils: ^3.5.13
-    dependencies:
-      '@ctrl/tinycolor': 3.6.1
-      '@element-plus/icons-vue': 2.3.1(vue@3.3.9)
-      '@floating-ui/dom': 1.5.3
-      '@popperjs/core': /@sxzz/popperjs-es@2.11.7
-      '@setaria/setaria-ts': file:../../git/setaria-ts(typescript@5.3.2)
-      '@types/lodash': 4.14.202
-      '@types/lodash-es': 4.17.12
-      '@vueuse/core': 9.13.0(vue@3.3.9)
-      async-validator: 4.2.5
-      axios: 1.6.2
-      dayjs: 1.11.10
-      element-plus: 2.4.3(vue@3.3.9)
-      escape-html: 1.0.3
-      lodash: 4.17.21
-      lodash-es: 4.17.21
-      lodash-unified: 1.0.3(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)
-      memoize-one: 6.0.0
-      normalize-wheel-es: 1.2.0
-      pinia: 2.1.7(typescript@5.3.2)(vue@3.3.9)
-      setaria-components: 0.0.2(element-plus@2.4.3)(vue@3.3.9)(vxe-table@4.5.13)(xe-utils@3.5.14)
-      vue: 3.3.9(typescript@5.3.2)
-      vue-i18n: 9.8.0(vue@3.3.9)
-      vue-router: 4.2.5(vue@3.3.9)
-      vxe-table: 4.5.13(vue@3.3.9)(xe-utils@3.5.14)
-      xe-utils: 3.5.14
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-    dev: false
-
-  file:../../git/setaria-ts(typescript@5.3.2):
-    resolution: {directory: ../../git/setaria-ts, type: directory}
-    id: file:../../git/setaria-ts
-    name: '@setaria/setaria-ts'
-    engines: {node: '>=18.0.0'}
-    dependencies:
-      axios: 1.6.2
-      lodash-es: 4.17.21
-      pinia: 2.1.7(typescript@5.3.2)(vue@3.3.9)
-      vue: 3.3.9(typescript@5.3.2)
-      vue-i18n: 9.8.0(vue@3.3.9)
-      vue-router: 4.2.5(vue@3.3.9)
-      vue-types: 5.1.1(vue@3.3.9)
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - debug
-      - typescript
-    dev: false
