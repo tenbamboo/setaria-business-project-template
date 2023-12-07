@@ -16,6 +16,11 @@ export default [
         name: "demo1-2",
         component: import("@/views/demo1/demo1-2.vue"),
       },
+      {
+        path: "demo1-3",
+        name: "demo1-3",
+        component: import("@/views/demo1/demo1-3.vue"),
+      },
     ],
   },
 ];
