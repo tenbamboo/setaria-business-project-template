@@ -3,7 +3,8 @@ import * as path from "path";
 //
 import { wrapperEnv } from "./build/utils";
 import { getPluginsList } from "./build/plugins";
-import { ConfigEnv, loadEnv, UserConfig } from "vite";
+import type { ConfigEnv, UserConfig } from "vite";
+import { loadEnv } from "vite";
 
 const serverProxy = {
   "^/api/": {
