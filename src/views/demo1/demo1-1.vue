@@ -27,7 +27,7 @@
     test500ErrorData,
     testDownload,
   } from "./service";
-  import { ServiceError, ApplicationError } from "@setaria/setaria-ts";
+  import { ApplicationError, ServiceError } from "@setaria/setaria-ts";
 
   // console.log(Framework, MyTest);
   const testThrowServiceException: () => void = () => {

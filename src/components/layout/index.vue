@@ -1,8 +1,14 @@
 <script setup lang="ts">
   import { computed, nextTick, ref, watch } from "vue";
   import { useI18n } from "vue-i18n";
-  import zhCn from "@/config/i18n/lang/element-plus/zh";
-  import enUs from "@/config/i18n/lang/element-plus/en";
+  // import zhCn from "@/config/i18n/lang/element-plus/zh";
+  import elementZh from "element-plus/dist/locale/zh-cn.mjs";
+  import elementEN from "element-plus/dist/locale/en.mjs";
+  // import enUs from "@/config/i18n/lang/element-plus/en";
+  import scZh from "setaria-components/es/locale/lang/zh-cn.mjs";
+  import scEn from "setaria-components/es/locale/lang/en.mjs";
+  import { merge } from "lodash-es";
+
   const { locale } = useI18n();
   const isReady = ref(true);
 
@@ -19,9 +25,10 @@
 
   const elementPlusLocale = computed(() => {
     if (locale.value === "zh-cn") {
-      return zhCn;
+      return merge(elementZh, scZh);
     }
-    return enUs;
+    console.log(merge(elementEN, scEn));
+    return merge(elementEN, scEn);
   });
   // elementPlusLocale
 

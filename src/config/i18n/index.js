@@ -3,6 +3,8 @@
 // import zhUi from 'setaria-ui/lib/locale/lang/zh-CN';
 import vxeZh from "vxe-table/lib/locale/lang/zh-CN";
 import vxeEn from "vxe-table/lib/locale/lang/en-US";
+
+// import scZh from "setaria-components/lib/locale/lang/zh-cn";
 import zhLocal from "./lang/zh";
 import enLocal from "./lang/en";
 
@@ -14,6 +16,7 @@ export default {
   messages: {
     "zh-cn": {
       ...vxeZh,
+      // ...scZh,
       ...zhLocal,
     },
     "en-us": {
