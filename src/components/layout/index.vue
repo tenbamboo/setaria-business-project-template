@@ -4,7 +4,6 @@
   // import zhCn from "@/config/i18n/lang/element-plus/zh";
   import elementZh from "element-plus/dist/locale/zh-cn.mjs";
   import elementEN from "element-plus/dist/locale/en.mjs";
-  // import enUs from "@/config/i18n/lang/element-plus/en";
   import scZh from "setaria-components/es/locale/lang/zh-cn.mjs";
   import scEn from "setaria-components/es/locale/lang/en.mjs";
   import { merge } from "lodash-es";

@@ -7,8 +7,8 @@ import removeConsole from "vite-plugin-remove-console";
 import Components from "unplugin-vue-components/vite";
 import AutoImport from "unplugin-auto-import/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
-
-export function getPluginsList(viteEnv, command) {
+import { manualChunksPlugin } from "vite-plugin-webpackchunkname";
+export function getPluginsList(viteEnv: any, command: string) {
   // const prodMock = true;
 
   const { VITE_DROP_CONSOLE, VITE_LEGACY } = viteEnv;
@@ -43,6 +43,8 @@ export function getPluginsList(viteEnv, command) {
           additionalLegacyPolyfills: ["regenerator-runtime/runtime"],
         })
       : null,
+    // 分包工具
+    manualChunksPlugin(),
     // 打包分析
     command === "report"
       ? visualizer({ open: true, brotliSize: true, filename: "report.html" })
