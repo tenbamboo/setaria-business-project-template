@@ -3,12 +3,8 @@
     "schemaInput": {
       "swaggerUrls": {
         "claim": {
-          "url": "http://10.199.134.149:9900/claim/v3/api-docs?group=claim",
-          "name": "报账单服务"
-        },
-        "oper": {
-          "url": "http://10.199.134.149:9300/operating/v3/api-docs?group=OPERATING-DEFAULT",
-          "name": "运营服务"
+          "url": "http://inside.sit.com/v3/api-docs/1.0%20%E7%89%88%E6%9C%AC",
+          "name": "test服务"
         }
       }
     },

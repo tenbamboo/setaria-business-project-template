@@ -43,7 +43,7 @@
     "unplugin-auto-import": "^0.16.7",
     "unplugin-vue-components": "^0.25.2",
     "util": "^0.12.4",
-    "swagger-to-jsonschema": "^0.0.4",
+    "swagger-to-jsonschema": "^0.0.7",
     "vite": "^4.4.5",
     "vite-plugin-remove-console": "^2.2.0",
     "vite-plugin-webpackchunkname": "^0.2.4",
